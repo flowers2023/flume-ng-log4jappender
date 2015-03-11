@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flume.clients.log4jappender.TestLog4jAppender
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.196 sec
