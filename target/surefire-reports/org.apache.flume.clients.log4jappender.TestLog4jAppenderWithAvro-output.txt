@@ -1,6 +1,0 @@
-log4j:WARN No appenders could be found for logger (org.apache.flume.source.AvroSource).
-log4j:WARN Please initialize the log4j system properly.
-log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-log4j:ERROR Could not find value for key log4j.appender.out2.layout
-log4j:WARN Cannot find ID for schema. Adding header for schema, which may be inefficient. Consider setting up an Avro Schema Cache.
-log4j:ERROR Could not find value for key log4j.appender.out2.layout
