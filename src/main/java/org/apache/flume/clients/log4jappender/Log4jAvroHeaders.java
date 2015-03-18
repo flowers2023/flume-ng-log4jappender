@@ -27,6 +27,9 @@ public enum Log4jAvroHeaders {
   MESSAGE_ENCODING("flume.client.log4j.message.encoding"),
   TIMESTAMP("timestamp"),
   SERVICE_NAME("serviceName"),
+  USERNAME("username"),
+  PASSWORD("password"),
+  TABLE("table"),
   HOST_NAME("hostname"),
   AVRO_SCHEMA_LITERAL("flume.avro.schema.literal"),
   AVRO_SCHEMA_URL("flume.avro.schema.url");

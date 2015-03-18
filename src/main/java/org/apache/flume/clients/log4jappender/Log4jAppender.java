@@ -14,7 +14,7 @@
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
- * under the License.
+ * under the License.ddddddddddddddd
  */
 package org.apache.flume.clients.log4jappender;
 
@@ -80,6 +80,9 @@ public class Log4jAppender extends AppenderSkeleton {
   private boolean avroReflectionEnabled;
   private String avroSchemaUrl;
   private String serviceName;
+  private String username;
+  private String password;
+  private String table;
 
   RpcClient rpcClient = null;
 
@@ -144,6 +147,15 @@ public class Log4jAppender extends AppenderSkeleton {
     if (hostname != null) {
       hdrs.put(Log4jAvroHeaders.HOST_NAME.toString(), hostname);
     }
+    if (username != null) {
+      hdrs.put(Log4jAvroHeaders.USERNAME.toString(), username);
+	}
+	if (password != null) {
+      hdrs.put(Log4jAvroHeaders.PASSWORD.toString(), password);
+	}
+    if (table != null) {
+      hdrs.put(Log4jAvroHeaders.TABLE.toString(), table);
+	}
 
     //if (serviceName == null || serviceName.isEmpty()) {
     //  hdrs.put(Log4jAvroHeaders.SERVICE_NAME.toString(), serviceName);
