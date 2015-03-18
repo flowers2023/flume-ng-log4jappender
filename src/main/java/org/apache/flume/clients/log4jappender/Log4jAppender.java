@@ -310,6 +310,18 @@ public class Log4jAppender extends AppenderSkeleton {
   public void setServiceName(String serviceName){
     this.serviceName = serviceName;
   }
+  
+  public void setUsername(String username){
+    this.username = username;
+  }
+
+  public void setPassword(String password){
+    this.password = password;
+  }
+
+  public void setTable(String table){
+    this.table = table;
+  }
 
   public long getTimeout() {
     return this.timeout;
